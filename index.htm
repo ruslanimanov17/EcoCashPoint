@@ -1,0 +1,1187 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smoot">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCashPoint</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="/favicon (1).png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="fixed z-999 top bg-white w-full top-0">
+      <header class="flex justify-between p-[25px] items-center">
+        <div class="flex gap-9">
+          <a href="#home">
+            <img src="/img/logo.png" class="w-[auto] h-[55px]" alt=""
+          /></a>
+          <div class="m-auto hidden md:flex">
+            <menu
+              class="flex gap-5 font-[sora] text-[16px] font-normal text-[#677e73]"
+            >
+              <li>
+                <a
+                  href="#section"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >How It Works</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section2"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Features</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section3"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Impact</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section7"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Calculator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section8"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >App</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section6"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Partners</a
+                >
+              </li>
+            </menu>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="#section8"
+            id="header_btn"
+            class="hidden text-white text-[16px] capitalize md:flex md:bg-gradient-to-br md:px-[15px] md:py-[5px] rounded-[50px] md:from-[hsl(152,68%,38%)] md:via-[hsl(165,60%,45%)] md:to-[hsl(145,55%,52%)] hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30"
+          >
+            get started
+          </a>
+          <a href="/indexAz.htm" class="text-right hidden md:inline">EN</a>
+        </div>
+
+        <div class="relative md:hidden">
+          <a href="/indexAz.htm" class="md:hidden mr-2">EN</a>
+          <button
+            popovertarget="desktop-menu-solutions"
+            class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+          >
+            <span
+              ><i
+                id="burger"
+                class="fa-solid fa-bars text-black text-[20px]"
+              ></i
+            ></span>
+          </button>
+
+          <el-popover
+            id="desktop-menu-solutions"
+            anchor="bottom"
+            popover
+            class="w-screen max-w-max bg-transparent transition transition-discrete [--anchor-gap:--spacing(5)] backdrop:bg-transparent open:flex font-[Sora] font-light"
+          >
+            <div
+              class="mr-2 mt-6 flex-auto overflow-hidden bg-white/30 backdrop-blur-xl text-sm/6 outline-1 -outline-offset-1 outline-white/10 rounded-lg"
+            >
+              <div class="p-4 text-[#333] text-[16px] tracking-normal">
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section"> How It Works </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section2"> Features </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section3"> Impact </a>
+                </div>
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section7"> Calculator </a>
+                </div>
+                <div
+                  class="navsection group relative flex rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section8"> App </a>
+                </div>
+                <div
+                  class="navsection group relative flex rounded-lg p-4 mb-6 hover:bg-white/5"
+                >
+                  <a href="#section6"> Partners </a>
+                </div>
+                <a
+                  href="#section8"
+                  class="navsection flex items-center font-semibold text-white text-center rounded-full justify-center gap-x-2.5 p-3 hover:bg-gray-700/50 bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] mb-6"
+                >
+                  Get Started
+                </a>
+              </div>
+            </div>
+          </el-popover>
+        </div>
+      </header>
+    </nav>
+    <div>
+      <div
+        id="home"
+        class="bg-[#e5f1eb] p-[25px] text-center font-[sora] lg:flex lg:items-center lg:justify-around lg:pb-27 mt-[100px] scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%] lg:text-start">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> smart recycling
+            revolution
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            recycle smart.
+            <i class="text-[#328d59] not-italic">earn rewards</i>. protect the
+            future.
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-6"
+          >
+            AI-powered smart bins that reward you for recycling. Scan, throw,
+            and earn cash back while making a real environmental impact.
+          </p>
+          <div class="text-center lg:flex lg:gap-5">
+            <a
+              class="flex justify-center items-center py-2.5 px-4 rounded-[20px] bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] text-white mb-3 hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30"
+              href="#section7"
+              >Calculate Your Earnings</a
+            >
+            <a
+              class="flex justify-center items-center py-2.5 px-4 rounded-[20px] border-2 border-[hsl(152,68%,38%)] text-[#328d59] mb-3 hover:bg-[hsl(152,68%,38%)] hover:text-white transition delay-150 duration-300 ease-in-out"
+              href="#section8"
+              >Download App</a
+            >
+          </div>
+
+          <div
+            class="flex flex-wrap justify-evenly lg:justify-start gap-7 mt-6 mt- mb-[15px]"
+          >
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                2k+
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">Items Recycled</div>
+            </div>
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                500+
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">Active Users</div>
+            </div>
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                ₼5K
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">Rewards Paid</div>
+            </div>
+          </div>
+        </div>
+        <img
+          src="/img/ecocashpoint.png"
+          alt="ecocashpoint"
+          class="rounded-[30px] my-7 lg:w-[40%]"
+        />
+      </div>
+      <div
+        id="section"
+        class="bg-[#fcfdfc] p-[25px] text-center font-[sora] lg:flex lg:flex-wrap lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> simple process
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            how it <i class="text-[#328d59] not-italic">works</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Three simple steps to start earning while saving the planet. No
+            complicated setup, just scan and go.
+          </p>
+        </div>
+
+        <div class="w-full lg:flex mt-[64px] lg:gap-9">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#1fa365] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-qrcode text-[25px] text-white"></i>
+              </span>
+              01
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Scan
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Open the app and scan the QR code on any EcoCashPoint smart bin to
+              start your recycling session.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#1fa365] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-trash text-[25px] text-white"></i>
+              </span>
+              02
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Throw
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Deposit your recyclable items. Our AI automatically identifies and
+              sorts materials for proper recycling.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#ecad40] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-wallet text-[25px] text-white"></i>
+              </span>
+              03
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Earn
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Get instant cash-back rewards credited to your wallet. Withdraw
+              anytime or use for eco-friendly purchases.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div
+        id="section2"
+        class="bg-[#e5f1eb] p-[25px] text-center font-[sora] lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> smart
+            technology
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            smart bin <i class="text-[#328d59] not-italic">features</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Cutting-edge technology meets sustainability. Our smart bins are
+            designed for maximum efficiency and user convenience.
+          </p>
+        </div>
+
+        <div class="lg:flex mt-[64px] lg:gap-9 lg:flex-col">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-brain text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              AI-Powered Sorting
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Open the app and scan the QR code on any EcoCashPoint smart bin to
+              start your recycling session.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i
+                class="fa-solid fa-gauge-simple-high text-[25px] text-[#4ea16b]"
+              ></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Smart Sensors
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Real-time fill-level monitoring ensures optimal collection routes
+              and prevents overflow.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-bell text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Full-Level Alerts
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Automatic notifications to waste management teams when bins reach
+              capacity.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-shield text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Secure Transactions
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Bank-grade encryption protects your earnings and personal
+              information.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-bolt text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Instant Rewards
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Get cash-back immediately after each deposit. No waiting, no
+              minimum thresholds.
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i
+                class="fa-solid fa-chart-column text-[25px] text-[#4ea16b]"
+              ></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Impact Tracking
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Monitor your environmental contribution with detailed analytics
+              and carbon offset data.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section3"
+        class="bg-[#5dad83] p-[25px] text-center font-[sora] lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] bg-white/15 backdrop-blur-4xl inline-block rounded-full px-4 py-1 font-light mb-6 text-white"
+          >
+            Making a Difference
+          </h6>
+          <h1 class="text-white text-[36px] lg:text-[45px] font-semibold mb-6">
+            Our Environmental Impact
+          </h1>
+          <p
+            class="text-[#ffffffcc] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Together with our community, we're creating measurable change for a
+            sustainable future.
+          </p>
+        </div>
+
+        <div class="lg:flex mt-[34px] lg:gap-9 lg:flex-row">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-recycle text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100 <span class="text-[#d4ebe1] text-[20px] font-light">kg</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Waste Recycled
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Materials diverted from landfills
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-tree text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              1.5K
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">Trees Saved</div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Equivalent forest preservation
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-droplet text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100 <span class="text-[#d4ebe1] text-[20px] font-light">L</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Water Conserved
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Through efficient recycling
+            </p>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-wind text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100
+              <span class="text-[#d4ebe1] text-[20px] font-light">tons</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">CO₂ Reduced</div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Carbon emissions prevented
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section7"
+        class="bg-[#f7fbf8] p-[25px] text-center font-[sora] lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-20 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            Estimate Your Earnings
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            rewards
+            <i class="text-[#328d59] not-italic">calculator</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            See how much you can earn by recycling. Enter the quantity of each
+            recyclable type and watch your potential rewards grow.
+          </p>
+        </div>
+
+        <div class="lg:flex lg:gap-5">
+          <div class="w-[100%] lg:w-[70%] mt-[64px]">
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-wrap flew-row leading-normal gap-5 justify-center items-center"
+            >
+              <div class="text-xl text-[#17261f]">Select Recyclables</div>
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#4e81ee] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-bottle-water text-white"></i>
+                    </span>
+                    <span>
+                      <p>Plastic bottles</p>
+                      <p class="text-[#677e73] text-[12px]">₼0,10 per bottle</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="pet_min()"
+                      id="plastic_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="plastic_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="pet_plus()"
+                      id="plastic_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="plastic_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#9ea3ae] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-trash text-white"></i>
+                    </span>
+                    <span>
+                      <p>Aluminum Cans</p>
+                      <p class="text-[#677e73] text-[12px]">₼0.15 per can</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="alim_min()"
+                      id="ali_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="ali_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="alim_plus()"
+                      id="ali_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="ali_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#43946c] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-wine-glass text-white"></i>
+                    </span>
+                    <span>
+                      <p>Glass Bottles</p>
+                      <p class="text-[#677e73] text-[12px]">₼0.08 per bottle</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="glass_min()"
+                      id="gla_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="gla_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="glass_plus()"
+                      id="gla_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="gla_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#cc7c2e] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-newspaper text-white"></i>
+                    </span>
+                    <span>
+                      <p>Paper/Cardboard</p>
+                      <p class="text-[#677e73] text-[12px]">₼0.02 per kg</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="paper_min()"
+                      id="pap_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="pap_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="paper_plus()"
+                      id="pap_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="pap_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#9d5aef] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-mobile text-white"></i>
+                    </span>
+                    <span>
+                      <p>Small Electronics</p>
+                      <p class="text-[#677e73] text-[12px]">₼1.50 per item</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="elec_min()"
+                      id="ele_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="ele_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="elec_plus()"
+                      id="ele_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="ele_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#e2b53f] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-battery text-white"></i>
+                    </span>
+                    <span>
+                      <p>Batteries</p>
+                      <p class="text-[#677e73] text-[12px]">
+                        ₼0.25 per battery
+                      </p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="bata_min()"
+                      id="bat_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="bat_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="bata_plus()"
+                      id="bat_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="bat_res" class="text-[#5bb392]"></div>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col lg:w-[30%] gap-5 justify-center">
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center lg:mt-[64px] mt-[30px] h-[max-content]"
+            >
+              <span
+                class="w-17 h-17 bg-[#e2b53f] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-coins text-[27px]"></i>
+              </span>
+
+              <div class="text-[14px] my-4 text-left text-[#677e73]">
+                Estimated Earnings
+              </div>
+              <div
+                id="total_sum"
+                class="text-[36px] text-left font-semibold text-[#5bb392]"
+              >
+                ₼0.00
+              </div>
+              <div
+                class="flex w-full justify-between border-t-3 pt-2 border-[#eff6f1]"
+              >
+                <span class="text-[#677e73] text-[14px]">Total item</span>
+                <span id="total_item" class="text-[14px]">0</span>
+              </div>
+              <div class="flex w-full justify-between">
+                <span class="text-[#677e73] text-[14px]">CO₂ Saved</span>
+                <span id="co2" class="text-[14px]">0.00 kg</span>
+              </div>
+            </div>
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-[#e5efe2] rounded-[25px] p-5 flex leading-normal h-[max-content] gap-5"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-leaf text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">
+                  Environmental Impact
+                </div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Add items above to see your environmental impact.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section8"
+        class="bg-[#e5f1eb] p-[25px] text-center font-[sora] lg:flex lg:items-center lg:justify-center py-27 scroll-mt-24"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            src="/img/app-mockup-BRdExHCl.png"
+            alt=""
+            class="flex justify-center items-center w-[60%] lg:w-[50%] rounded-[30px]"
+          />
+        </div>
+        <div class="lg:w-[70%] text-left lg:text-center">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mt-15 mb-6 border-1 border-[#adadad]"
+          >
+            Mobile App
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            Recycle On
+            <i class="text-[#328d59] not-italic">The Go</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Download our app to find nearby bins, track your rewards, and
+            monitor your environmental impact all in one place.
+          </p>
+          <div class="flex flex-wrap">
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-location text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Find Nearby Bins</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Locate the closest EcoCashPoint bins with real-time
+                  availability.
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i
+                  class="fa-solid fa-clock-rotate-left text-[#4ea16b] text-[20px]"
+                ></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Track History</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  View your complete recycling history and earnings over time.
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-gift text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Redeem Rewards</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Convert your points to cash or eco-friendly products.
+                </div>
+              </div>
+            </div>
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-user text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Personal Impact</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  See your individual contribution to environmental
+                  conservation.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="text-center flex gap-5 mt-10">
+            <a
+              class="flex gap-1 justify-center items-center py-2.5 px-4 rounded-[20px] bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] text-white mb-3 hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30 w-[50%]"
+              href="https://www.apple.com/app-store/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple"></i>App Store
+            </a>
+            <a
+              class="flex gap-1 justify-center items-center py-2.5 px-4 rounded-[20px] border-2 border-[hsl(152,68%,38%)] text-[#328d59] mb-3 hover:bg-[hsl(152,68%,38%)] hover:text-white transition delay-150 duration-300 ease-in-out w-[50%]"
+              href="https://play.google.com/store/apps"
+              target="_blank"
+            >
+              <i class="fa-brands fa-google-play"></i>Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section6"
+        class="bg-[#f7fbf8] p-[25px] text-center font-[sora] lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            Trusted Partners
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            building
+            <i class="text-[#328d59] not-italic">smart cities</i> together
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            We partner with municipalities, corporations, and environmental
+            organizations to create sustainable waste management ecosystems.
+          </p>
+        </div>
+        <div class="lg:flex w-[100%] mt-[64px] gap-10">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-tree text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2">"Tamiz Shahar" ASC</div>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-landmark text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2">
+              Local Municipalities
+            </div>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-industry text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900d text-[20px] mb-2 text-center">
+              Universities
+            </div>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-building text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2 text-center">
+              Residential Complexies
+            </div>
+          </div>
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-seedling text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2 text-center">
+              CleanWorld Foundation
+            </div>
+          </div>
+        </div>
+        <div class="mt-[64px] text-[#677e73]">
+          Interested in bringing EcoCashPoint to your city?
+        </div>
+        <div class="mt-[20px] text-[#1fa365]">
+          <a href="mailto:ecocashpoint@mail.com">Become a Partner →</a>
+        </div>
+      </div>
+      <div
+        id="footer"
+        class="bg-[#17261f] p-[25px] text-center font-[sora] pt-15 scroll-mt-24"
+      >
+        <div
+          class="flex flex-col text-left lg:flex-row lg:items-center lg:justify-around"
+        >
+          <div class="flex flex-col">
+            <a href="#home">
+              <img
+                src="/img/logo.png"
+                class="w-[140px] bg-white rounded-[20px] p-2 mb-10"
+                alt=""
+            /></a>
+            <p class="text-[16px] mb-10 text-[#677e73]">
+              Making recycling rewarding for everyone. Join the movement towards
+              a sustainable future.
+            </p>
+            <div class="text-[#677e73] text-[14px] flex flex-col gap-2">
+              <a
+                href="mailto:test@mail.com"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-envelope mr-1"></i>
+                ecocashpoint@mail.com</a
+              >
+              <a
+                href="tel:+994123456789"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-phone mr-1"></i> +994 12 345 67 89</a
+              >
+              <a
+                href="https://maps.google.com/?q=Baku"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-location-dot mr-1"></i> Baku, Azerbaijan
+              </a>
+            </div>
+          </div>
+          <menu
+            class="flex flex-col text-left gap-2 text-[14px] text-[#677e73] mt-10 lg:mt-0"
+          >
+            <li>
+              <p class="text-white">Menu</p>
+            </li>
+            <li>
+              <a href="#section" class="hover:text-white">How It Works</a>
+            </li>
+            <li>
+              <a href="#section2" class="hover:text-white">Features</a>
+            </li>
+            <li>
+              <a href="#section3" class="hover:text-white">Impact</a>
+            </li>
+            <li>
+              <a href="#section7" class="hover:text-white">Calculator</a>
+            </li>
+            <li>
+              <a href="#section8" class="hover:text-white">App</a>
+            </li>
+            <li>
+              <a
+                href="#section6"
+                class="hover:text-white transition delay-100 duration-200 ease-in-out"
+                >Partners</a
+              >
+            </li>
+          </menu>
+        </div>
+
+        <div class="border-t border-[#677e73] mt-10 pt-10 text-[#677e73]">
+          <p class="text-[14px]">© 2024 EcoCashPoint. All rights reserved.</p>
+          <div class="flex justify-center gap-3 text-[20px] mt-2">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram hover:text-white"></i
+            ></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin hover:text-white"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <i class="fa-brands fa-youtube hover:text-white"></i>
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+              <i class="fa-brands fa-whatsapp hover:text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>

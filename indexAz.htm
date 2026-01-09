@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EcoCashPoint</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="shortcut icon" href="/favicon (1).png" type="image/x-icon" />
+    <link rel="stylesheet" href="/css/reset.css" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <nav class="fixed z-999 top bg-white w-full top-0">
+      <header class="flex justify-between p-[25px] items-center">
+        <div class="flex gap-9">
+          <a href="#home">
+            <img src="/img/logo.png" class="w-[auto] h-[55px]" alt="" />
+          </a>
+
+          <div class="m-auto hidden md:flex">
+            <menu class="flex gap-5 text-[16px] font-normal text-[#677e73]">
+              <li>
+                <a
+                  href="#section"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Necə işləyir</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section2"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Xüsusiyyətlər</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section3"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Təsir</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section7"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Kalkulyator</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section8"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Tətbiq</a
+                >
+              </li>
+              <li>
+                <a
+                  href="#section6"
+                  class="hover:text-black transition delay-150 duration-200 ease-in-out"
+                  >Tərəfdaşlar</a
+                >
+              </li>
+            </menu>
+          </div>
+        </div>
+        <div class="flex items-center gap-3">
+          <a
+            href="#section8"
+            id="header_btn"
+            class="hidden text-white text-[16px] capitalize md:flex md:bg-gradient-to-br md:px-[15px] md:py-[5px] rounded-[50px] md:from-[hsl(152,68%,38%)] md:via-[hsl(165,60%,45%)] md:to-[hsl(145,55%,52%)] hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30"
+          >
+            Başla
+          </a>
+          <a href="/index.htm" class="hidden md:inline">AZ</a>
+        </div>
+        <div class="relative md:hidden">
+          <a href="/index.htm" class="md:hidden mr-2">AZ</a>
+          <button
+            popovertarget="desktop-menu-solutions"
+            class="inline-flex items-center gap-x-1 text-sm/6 font-semibold text-white"
+          >
+            <span>
+              <i
+                id="burger"
+                class="fa-solid fa-bars text-black text-[20px]"
+              ></i>
+            </span>
+          </button>
+
+          <el-popover
+            id="desktop-menu-solutions"
+            anchor="bottom"
+            popover
+            class="w-screen max-w-max bg-transparent transition transition-discrete [--anchor-gap:--spacing(5)] backdrop:bg-transparent open:flex font-light"
+          >
+            <div
+              class="mr-2 mt-6 flex-auto overflow-hidden bg-white/30 backdrop-blur-xl text-sm/6 outline-1 -outline-offset-1 outline-white/10 rounded-lg"
+            >
+              <div class="p-4 text-[#333] text-[16px] tracking-normal">
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section"> Necə işləyir </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section2"> Xüsusiyyətlər </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section3"> Təsir </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex gap-x-6 rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section7"> Kalkulyator </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex rounded-lg p-4 hover:bg-white/5"
+                >
+                  <a href="#section8"> Tətbiq </a>
+                </div>
+
+                <div
+                  class="navsection group relative flex rounded-lg p-4 mb-6 hover:bg-white/5"
+                >
+                  <a href="#section6"> Tərəfdaşlar </a>
+                </div>
+
+                <a
+                  href="#section8"
+                  class="navsection flex items-center font-semibold text-white text-center rounded-full justify-center gap-x-2.5 p-3 hover:bg-gray-700/50 bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] mb-6"
+                >
+                  Başla
+                </a>
+              </div>
+            </div>
+          </el-popover>
+        </div>
+      </header>
+    </nav>
+    <div>
+      <div
+        id="home"
+        class="bg-[#e5f1eb] p-[25px] text-center lg:flex lg:items-center lg:justify-around lg:pb-27 mt-[100px] scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%] lg:text-start">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> təkrar emalda
+            ağıllı inqilab
+          </h6>
+
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            Təkrar emal et.
+            <i class="text-[#328d59] not-italic">həm qazan</i>. həm qoru.
+          </h1>
+
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-6"
+          >
+            Süni intellektlə işləyən ağıllı konteynerlər. Təkrar emal et, at və
+            pulunu qazan — həm də ətraf mühitə real töhfə ver.
+          </p>
+
+          <div class="text-center lg:flex lg:gap-5">
+            <a
+              class="flex justify-center items-center py-2.5 px-4 rounded-[20px] bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] text-white mb-3 hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30"
+              href="#section7"
+              >Qazancını hesabla</a
+            >
+            <a
+              class="flex justify-center items-center py-2.5 px-4 rounded-[20px] border-2 border-[hsl(152,68%,38%)] text-[#328d59] mb-3 hover:bg-[hsl(152,68%,38%)] hover:text-white transition delay-150 duration-300 ease-in-out"
+              href="#section8"
+              >Tətbiqi yüklə</a
+            >
+          </div>
+
+          <div
+            class="flex flex-wrap justify-evenly lg:justify-start gap-7 mt-6 mt- mb-[15px]"
+          >
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                2K+
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">
+                Təkrar emal edilən məhsullar
+              </div>
+            </div>
+
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                500+
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">Aktiv istifadəçilər</div>
+            </div>
+
+            <div>
+              <div
+                class="text-[hsl(152,68%,38%)] font-semibold text-[30px] lg:text-[35px]"
+              >
+                ₼5K
+              </div>
+              <div class="text-[#a0a0a0] text-[14px]">Ödənilmiş mükafatlar</div>
+            </div>
+          </div>
+        </div>
+
+        <img
+          src="/img/ecocashpoint.png"
+          alt="ecocashpoint"
+          class="rounded-[30px] my-7 lg:w-[40%]"
+        />
+      </div>
+      <div
+        id="section"
+        class="bg-[#fcfdfc] p-[25px] text-center lg:flex lg:flex-wrap lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> sadə proses
+          </h6>
+
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            necə <i class="text-[#328d59] not-italic">İşləyir</i>
+          </h1>
+
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Qazanmağa başlamaq üçün cəmi üç sadə addım. Heç bir çətinlik yoxdur
+            — skan et və qazan.
+          </p>
+        </div>
+
+        <div class="w-full lg:flex mt-[64px] lg:gap-9">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#1fa365] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-qrcode text-[25px] text-white"></i>
+              </span>
+              01
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Skan et
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Tətbiqi aç və təkrar emala başlamaq üçün istənilən EcoCashPoint
+              ağıllı konteynerinin üzərindəki QR kodu skan et.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#1fa365] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-trash text-[25px] text-white"></i>
+              </span>
+              02
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              At
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Təkrar emal edilə bilən materialları konteynerə at. Süni
+              intellektimiz materialları avtomatik olaraq tanıyır və düzgün
+              şəkildə çeşidləyir.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-100 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <p
+              class="flex text-left text-[48px] font-semibold text-[#deede4] gap-3 items-center mb-3"
+            >
+              <span
+                class="w-12 h-12 bg-[#ecad40] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-wallet text-[25px] text-white"></i>
+              </span>
+              03
+            </p>
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Qazan
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Pulun dərhal balansına oturur. İstədiyin vaxt çıxart və ya
+              müxtəlif sahələrdə xərclə.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section2"
+        class="bg-[#e5f1eb] p-[25px] text-center lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            <i class="fa-solid fa-leaf mr-1 text-[#4ea16b]"></i> ağıllı
+            texnologiya
+          </h6>
+
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            ağıllı konteyner
+            <i class="text-[#328d59] not-italic">xüsusiyyətləri</i>
+          </h1>
+
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Ən son texnologiya davamlılıqla birləşir. Ağıllı konteynerlərimiz
+            maksimum səmərəlilik və istifadəçi rahatlığı üçün hazırlanıb.
+          </p>
+        </div>
+
+        <div class="lg:flex mt-[64px] lg:gap-9 lg:flex-col">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-brain text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Süni intellektlə idarə olunan çeşidləmə
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Təkrar emal prosesinə başlamaq üçün tətbiqi aç və istənilən
+              EcoCashPoint ağıllı konteynerinin üzərindəki QR kodu skan et.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i
+                class="fa-solid fa-gauge-simple-high text-[25px] text-[#4ea16b]"
+              ></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Ağıllı sensorlar
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Doldurma səviyyəsinin real vaxtda izlənməsi optimal yığım
+              marşrutlarını təmin edir və daşmanın qarşısını alır.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-bell text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Dolu konteyner bildirişləri
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Konteynerlər dolduqda tullantı idarəetmə komandalarına avtomatik
+              bildirişlər göndərilir.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-shield text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Təhlükəsiz əməliyyatlar
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Bank səviyyəli şifrələmə qazancınızı və şəxsi məlumatlarınızı
+              etibarlı şəkildə qoruyur.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-bolt text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Ani mükafatlar
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Hər depozitdən dərhal sonra geri ödəmə əldə et. Gözləmə yoxdur,
+              minimum limit yoxdur.
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i
+                class="fa-solid fa-chart-column text-[25px] text-[#4ea16b]"
+              ></i>
+            </span>
+
+            <div class="text-gray-900 font-semibold text-[24px] mb-2 text-left">
+              Təsirin izlənməsi
+            </div>
+            <p class="text-[#677e73] font-light text-left">
+              Ətraf mühitə töhfəni ətraflı analitika və karbon azaldılması
+              məlumatları ilə izləyin.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section3"
+        class="bg-[#5dad83] p-[25px] text-center lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] bg-white/15 backdrop-blur-4xl inline-block rounded-full px-4 py-1 font-light mb-6 text-white"
+          >
+            Fərq yaradırıq
+          </h6>
+          <h1 class="text-white text-[36px] lg:text-[45px] font-semibold mb-6">
+            Ətraf mühitə təsirimiz
+          </h1>
+          <p
+            class="text-[#ffffffcc] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            İcma olaraq birlikdə davamlı gələcək üçün ölçülə bilən dəyişikliklər
+            yaradırıq.
+          </p>
+        </div>
+
+        <div class="lg:flex mt-[34px] lg:gap-9 lg:flex-row">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-recycle text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100 <span class="text-[#d4ebe1] text-[20px] font-light">kq</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Təkrar emal edilmiş tullantı
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Zibilxanalara getməyən materiallar
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-tree text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              1.5K
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Qorunan ağaclar
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Meşələrin qorunmasına bərabər
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-droplet text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100 <span class="text-[#d4ebe1] text-[20px] font-light">L</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Qənaət edilən su
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Səmərəli təkrar emal sayəsində
+            </p>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center mt-9 lg:mt-0"
+          >
+            <span
+              class="w-16 h-16 bg-white/20 backdrop-blur-4xl rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-wind text-[30px] text-white"></i>
+            </span>
+
+            <div class="text-white font-semibold text-[36px] mb-2 text-left">
+              100
+              <span class="text-[#d4ebe1] text-[20px] font-light">ton</span>
+            </div>
+            <div class="text-white text-[20px] mb-2 text-left">
+              Azaldılmış CO₂
+            </div>
+            <p class="text-[#d4ebe1] font-light text-left">
+              Qarşısı alınmış karbon emissiyaları
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section7"
+        class="bg-[#f7fbf8] p-[25px] text-center lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-20 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            Qazancınızı Hesablayın
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            mükafat
+            <i class="text-[#328d59] not-italic">kalkulyatoru</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Təkrar emal etməklə nə qədər qazana biləcəyinizi görün. Hər bir
+            təkrar emal növü üzrə miqdarı daxil edin və potensial qazancınızın
+            necə artdığını izləyin.
+          </p>
+        </div>
+
+        <div class="lg:flex lg:gap-5">
+          <div class="w-[100%] lg:w-[70%] mt-[64px]">
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-wrap flew-row leading-normal gap-5 justify-center items-center"
+            >
+              <div class="text-xl text-[#17261f]">
+                Təkrar emal olunanları seçin
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#4e81ee] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-bottle-water text-white"></i>
+                    </span>
+                    <span>
+                      <p>Plastik butulkalar</p>
+                      <p class="text-[#677e73] text-[12px]">
+                        ₼0,10 hər butulka
+                      </p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="pet_min()"
+                      id="plastic_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="plastic_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="pet_plus()"
+                      id="plastic_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="plastic_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#9ea3ae] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-trash text-white"></i>
+                    </span>
+                    <span>
+                      <p>Alüminium qutular</p>
+                      <p class="text-[#677e73] text-[12px]">₼0.15 hər qutu</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="alim_min()"
+                      id="ali_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="ali_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="alim_plus()"
+                      id="ali_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="ali_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#43946c] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-wine-glass text-white"></i>
+                    </span>
+                    <span>
+                      <p>Şüşə butulkalar</p>
+                      <p class="text-[#677e73] text-[12px]">
+                        ₼0.08 hər butulka
+                      </p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="glass_min()"
+                      id="gla_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="gla_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="glass_plus()"
+                      id="gla_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="gla_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#cc7c2e] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-newspaper text-white"></i>
+                    </span>
+                    <span>
+                      <p>Kağız/Karton</p>
+                      <p class="text-[#677e73] text-[12px]">₼0.02 hər kq</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="paper_min()"
+                      id="pap_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="pap_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="paper_plus()"
+                      id="pap_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="pap_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#9d5aef] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-mobile text-white"></i>
+                    </span>
+                    <span>
+                      <p>Kiçik elektronika</p>
+                      <p class="text-[#677e73] text-[12px]">₼1.50 hər ədəd</p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="elec_min()"
+                      id="ele_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="ele_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="elec_plus()"
+                      id="ele_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="ele_res" class="text-[#5bb392]"></div>
+              </div>
+
+              <div
+                class="flex text-left gap-5 rounded-[25px] items-center bg-[#fdfefd] border-2 border-[#eff6f1] p-5 lg:w-[45%] w-full justify-between overflow-hidden"
+              >
+                <div class="flex flex-wrap gap-5">
+                  <div class="flex gap-3 lg:w-50">
+                    <span
+                      class="w-12 h-12 bg-[#e2b53f] rounded-[15px] flex items-center justify-center shrink-0"
+                    >
+                      <i class="fa-solid fa-battery text-white"></i>
+                    </span>
+                    <span>
+                      <p>Batareyalar</p>
+                      <p class="text-[#677e73] text-[12px]">
+                        ₼0.25 hər batareya
+                      </p>
+                    </span>
+                  </div>
+                  <div class="text-center">
+                    <button
+                      onclick="bata_min()"
+                      id="bat_min"
+                      class="bg-[#ecf6ef] rounded-full px-3 py-1"
+                    >
+                      -
+                    </button>
+                    <input
+                      class="rounded-[20%] w-17 text-center overflow-hidden mx-2 bg-[#fdfefd] border-1 border-[#eff6f1]"
+                      id="bat_inp"
+                      type="number"
+                      min="0"
+                    />
+                    <button
+                      onclick="bata_plus()"
+                      id="bat_plus"
+                      class="bg-[#4ea16b] text-white rounded-full px-3 py-1"
+                    >
+                      +
+                    </button>
+                  </div>
+                </div>
+                <div id="bat_res" class="text-[#5bb392]"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="flex flex-col lg:w-[30%] gap-5 justify-center">
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white/15 backdrop-blur-4xl rounded-[25px] p-8 flex flex-col leading-normal items-center lg:mt-[64px] mt-[30px] h-[max-content]"
+            >
+              <span
+                class="w-17 h-17 bg-[#e2b53f] rounded-[15px] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-coins text-[27px]"></i>
+              </span>
+
+              <div class="text-[14px] my-4 text-left text-[#677e73]">
+                Təxmini qazanc
+              </div>
+              <div
+                id="total_sum"
+                class="text-[36px] text-left font-semibold text-[#5bb392]"
+              >
+                ₼0.00
+              </div>
+              <div
+                class="flex w-full justify-between border-t-3 pt-2 border-[#eff6f1]"
+              >
+                <span class="text-[#677e73] text-[14px]"
+                  >Ümumi məhsul sayı</span
+                >
+                <span id="total_item" class="text-[14px]">0</span>
+              </div>
+              <div class="flex w-full justify-between">
+                <span class="text-[#677e73] text-[14px]"
+                  >Qənaət edilən CO₂</span
+                >
+                <span id="co2" class="text-[14px]">0.00 kg</span>
+              </div>
+            </div>
+
+            <div
+              class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-[#e5efe2] rounded-[25px] p-5 flex leading-normal h-[max-content] gap-5"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-leaf text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Ətraf mühitə təsir</div>
+
+                <div id="envAZ" class="text-xs text-[#677e73]">
+                  Ətraf mühitə təsirinizi görmək üçün yuxarıdan məhsul əlavə
+                  edin.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section8"
+        class="bg-[#e5f1eb] p-[25px] text-center lg:flex lg:items-center lg:justify-center py-27 scroll-mt-24"
+      >
+        <div class="flex justify-center items-center">
+          <img
+            src="/img/app-mockup-BRdExHCl.png"
+            alt=""
+            class="flex justify-center items-center w-[60%] lg:w-[50%] rounded-[30px]"
+          />
+        </div>
+        <div class="lg:w-[70%] text-left lg:text-center">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mt-15 mb-6 border-1 border-[#adadad]"
+          >
+            Mobil tətbiq
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            Harada olsan,
+            <i class="text-[#328d59] not-italic">təkrar emal et</i>
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Yaxınlıqdakı konteynerləri tapmaq, mükafatlarını izləmək və ətraf
+            mühitə təsirini bir yerdə görmək üçün tətbiqimizi yüklə.
+          </p>
+          <div class="flex flex-wrap">
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-location text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">
+                  Yaxın konteynerləri tap
+                </div>
+
+                <div class="text-xs text-[#677e73]">
+                  Real vaxt mövcudluğu ilə ən yaxın EcoCashPoint konteynerlərini
+                  tap.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i
+                  class="fa-solid fa-clock-rotate-left text-[#4ea16b] text-[20px]"
+                ></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Tarixçəni izlə</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Təkrar emal tarixçəni və qazancını zamanla izləyin.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-gift text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Mükafatları xərclə</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Xallarını pula və ya ekoloji məhsullara çevir.
+                </div>
+              </div>
+            </div>
+
+            <div
+              class="pt-5 lg:p-5 flex leading-normal h-[max-content] gap-5 lg:w-[50%] w-[100%]"
+            >
+              <span
+                class="w-12 h-12 rounded-[50%] bg-[#c7e0ce] flex items-center justify-center shrink-0"
+              >
+                <i class="fa-solid fa-user text-[#4ea16b] text-[20px]"></i>
+              </span>
+              <div class="text-left flex flex-col justify-center">
+                <div class="text-[14px] text-[#17261f]">Şəxsi təsir</div>
+
+                <div id="env" class="text-xs text-[#677e73]">
+                  Ətraf mühitin qorunmasına şəxsi töhfəni gör.
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="text-center flex gap-5 mt-10">
+            <a
+              class="flex gap-1 justify-center items-center py-2.5 px-4 rounded-[20px] bg-gradient-to-br from-[hsl(152,68%,38%)] via-[hsl(165,60%,45%)] to-[hsl(145,55%,52%)] text-white mb-3 hover:-translate-y-1 hover:scale-105 transition delay-150 duration-300 ease-in-out hover:shadow-lg/30 w-[50%]"
+              href="https://www.apple.com/app-store/"
+              target="_blank"
+            >
+              <i class="fa-brands fa-apple"></i>App Store
+            </a>
+            <a
+              class="flex gap-1 justify-center items-center py-2.5 px-4 rounded-[20px] border-2 border-[hsl(152,68%,38%)] text-[#328d59] mb-3 hover:bg-[hsl(152,68%,38%)] hover:text-white transition delay-150 duration-300 ease-in-out w-[50%]"
+              href="https://play.google.com/store/apps"
+              target="_blank"
+            >
+              <i class="fa-brands fa-google-play"></i>Google Play
+            </a>
+          </div>
+        </div>
+      </div>
+      <div
+        id="section6"
+        class="bg-[#f7fbf8] p-[25px] text-center lg:flex lg:flex-wrap lg:flex-col lg:items-center lg:justify-center pb-27 scroll-mt-24"
+      >
+        <div class="mt-18 lg:w-[50%]">
+          <h6
+            class="text-[14px] capitalize bg-[#ecf6ef] inline-block rounded-full px-3 py-1 font-light mb-6 border-1 border-[#adadad]"
+          >
+            Etibarlı tərəfdaşlar
+          </h6>
+          <h1 class="capitalize text-[36px] lg:text-[45px] font-semibold mb-6">
+            birlikdə
+            <i class="text-[#328d59] not-italic">ağıllı şəhərlər</i> qururuq
+          </h1>
+          <p
+            class="text-[#677e73] font-light text-[16px] lg:text-[17px] text-base/7 mb-5"
+          >
+            Davamlı tullantı idarəetmə ekosistemləri yaratmaq üçün bələdiyyələr,
+            şirkətlər və ekoloji təşkilatlarla əməkdaşlıq edirik.
+          </p>
+        </div>
+
+        <div class="lg:flex w-[100%] mt-[64px] gap-10 lg:justify-center">
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-tree text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2">"Təmiz Şəhər" ASC</div>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-landmark text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2">Yerli bələdiyyələr</div>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-industry text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900d text-[20px] mb-2 text-center">
+              Universitetlər
+            </div>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-building text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2 text-center">
+              Yaşayış kompleksləri
+            </div>
+          </div>
+
+          <div
+            class="border border-transparent shadow-[0_0_25px_rgba(0,0,0,0.25)] bg-white rounded-[25px] p-8 flex flex-col leading-normal mt-9 lg:mt-0 items-center transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-102"
+          >
+            <span
+              class="w-12 h-12 bg-[#edf6f0] rounded-[15px] flex items-center justify-center shrink-0 mb-5"
+            >
+              <i class="fa-solid fa-seedling text-[25px] text-[#4ea16b]"></i>
+            </span>
+
+            <div class="text-gray-900 text-[20px] mb-2 text-center">
+              CleanWorld Fondu
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-[64px] text-[#677e73]">
+          EcoCashPoint-i bölgənizə gətirməkdə maraqlısınız?
+        </div>
+        <div class="mt-[20px] text-[#1fa365]">
+          <a href="mailto:ecocashpoint@mail.com">Tərəfdaş olun →</a>
+        </div>
+      </div>
+      <div
+        id="footer"
+        class="bg-[#17261f] p-[25px] text-center pt-15 scroll-mt-24"
+      >
+        <div
+          class="flex flex-col text-left lg:flex-row lg:items-center lg:justify-around"
+        >
+          <div class="flex flex-col">
+            <a href="#home">
+              <img
+                src="/img/logo.png"
+                class="w-[140px] bg-white rounded-[20px] p-2 mb-10"
+                alt="logo"
+              />
+            </a>
+            <p class="text-[16px] mb-10 text-[#677e73]">
+              Təkrar emalı hər kəs üçün qazanc mənbəyinə çeviririk. Davamlı
+              gələcək üçün bu hərəkatın bir hissəsi ol.
+            </p>
+            <div class="text-[#677e73] text-[14px] flex flex-col gap-2">
+              <a
+                href="mailto:ecocashpoint@mail.com"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-envelope mr-1"></i>
+                ecocashpoint@mail.com
+              </a>
+              <a
+                href="tel:+994123456789"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-phone mr-1"></i> +994 12 345 67 89
+              </a>
+              <a
+                href="https://maps.google.com/?q=Baku"
+                target="_blank"
+                class="hover:text-white"
+              >
+                <i class="fa-solid fa-location-dot mr-1"></i> Bakı, Azərbaycan
+              </a>
+            </div>
+          </div>
+
+          <menu
+            class="flex flex-col text-left gap-2 text-[14px] text-[#677e73] mt-10 lg:mt-0"
+          >
+            <li>
+              <p class="text-white">Menyu</p>
+            </li>
+            <li>
+              <a href="#section" class="hover:text-white">Necə işləyir</a>
+            </li>
+            <li>
+              <a href="#section2" class="hover:text-white">Xüsusiyyətlər</a>
+            </li>
+            <li>
+              <a href="#section3" class="hover:text-white">Təsir</a>
+            </li>
+            <li>
+              <a href="#section7" class="hover:text-white">Kalkulyator</a>
+            </li>
+            <li>
+              <a href="#section8" class="hover:text-white">Tətbiq</a>
+            </li>
+            <li>
+              <a href="#section6" class="hover:text-white">Tərəfdaşlar</a>
+            </li>
+          </menu>
+        </div>
+
+        <div class="border-t border-[#677e73] mt-10 pt-10 text-[#677e73]">
+          <p class="text-[14px]">
+            © 2024 EcoCashPoint. Bütün hüquqlar qorunur.
+          </p>
+          <div class="flex justify-center gap-3 text-[20px] mt-2">
+            <a href="https://www.instagram.com/" target="_blank"
+              ><i class="fa-brands fa-instagram hover:text-white"></i
+            ></a>
+            <a href="https://www.linkedin.com/" target="_blank">
+              <i class="fa-brands fa-linkedin hover:text-white"></i>
+            </a>
+            <a href="https://www.youtube.com/" target="_blank">
+              <i class="fa-brands fa-youtube hover:text-white"></i>
+            </a>
+            <a href="https://www.whatsapp.com/" target="_blank">
+              <i class="fa-brands fa-whatsapp hover:text-white"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/flowbite@1.4.1/dist/flowbite.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1"
+      type="module"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
